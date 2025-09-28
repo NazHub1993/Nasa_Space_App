@@ -5,6 +5,9 @@ import Home from './components/Home'
 import Navbar from './components/Navbar'
 import { Globe } from "@/components/ui/globe"
 import ScrollSection from './components/ScrollSection'
+import SearchDrawMap from "./components/SearchDrawMap";//map
+import React from "react";
+
 
 // Import your login and signup pages
 import Login from './components/Login'
@@ -37,3 +40,7 @@ function App() {
 }
 
 export default App
+
+
+
+

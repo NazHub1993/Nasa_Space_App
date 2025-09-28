@@ -118,3 +118,22 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* leaflet map starts */
+
+/* Give date picker a higher priority than map */
+.react-datepicker-popper {
+  z-index: 2000 !important;
+}
+
+/* Style for input so it looks neat */
+.date-picker-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 180px;
+  cursor: pointer;
+}
+
+
+/* leaflet map ends */
