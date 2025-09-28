@@ -78,7 +78,7 @@ const SearchDrawMap = () => {
   };
 
   return (
-    <>
+    <div id="main" className=" flex flex-col h-screen w-full justify-center items-center">
      <div
         style={{
           display: "flex",
@@ -86,12 +86,13 @@ const SearchDrawMap = () => {
           gap: "10px",
           marginBottom: "15px",
           flexWrap: "wrap",
+         
         }}
       >
         {/* Search Input */}
         <form
           onSubmit={handleSearch}
-          style={{ display: "flex", minWidth: "320px" }}
+          style={{ display: "flex" }}
         >
           <input
             type="text"
@@ -104,6 +105,8 @@ const SearchDrawMap = () => {
               borderRadius: "6px 0 0 6px",
               border: "1px solid #ccc",
               outline: "none",
+              color:"white",
+              font:"bold"
             }}
           />
           <button
@@ -131,12 +134,21 @@ const SearchDrawMap = () => {
           }}
           isClearable={true}
           dateFormat="dd/MM/yyyy"
-          placeholderText="Select date range"
-          className="date-picker-input"
+          placeholder="Select date range"
+          className="date-picker-input text-white font-bold w-full"
           style={{
-            padding: "8px",
-            border: "1px solid #ccc",
-            borderRadius: "6px",
+            // padding: "8px",
+            // border: "1px solid #ccc",
+            // borderRadius: "6px",
+            // color:"white",
+            // font:"bold",
+            //  width:"250px",
+             padding: "8px",
+    border: "1px solid #ccc",
+    borderRadius: "6px",
+    color: "black",
+    fontWeight: "bold",
+    width: "250px",   // ✅ fixed width
           }}
         />
       </div>
@@ -188,7 +200,7 @@ const SearchDrawMap = () => {
           </FeatureGroup>
         </MapContainer>
       </div>
-    </>
+    </div>
   );
 };
 

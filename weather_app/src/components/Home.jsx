@@ -17,7 +17,7 @@ const Home = () => {
             </p>
 
             {/* Action Button */}
-            <button className="bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-blue-800 hover:font-bold cursor-pointer transition-all duration-300">
+            <button onClick={() => (window.location.href = "/SearchDrawMap")} className="bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-blue-800 hover:font-bold cursor-pointer transition-all duration-300">
                 Check Weather
             </button>
 

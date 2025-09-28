@@ -15,7 +15,8 @@ import SignUp from './components/SignUp'
 
 function App() {
   return (
-    <BrowserRouter>
+
+<BrowserRouter>
       <div className="w-full h-screen bg-gray-900 ">
         <Navbar />
         <Routes>
@@ -25,6 +26,11 @@ function App() {
           {/* Auth routes */}
           <Route path="/login" element={<Login />} />
           <Route path="/sign_up" element={<SignUp />} />
+          {/* Map route */}
+         
+           <Route path="/map" element={<SearchDrawMap />} />
+        
+          
         </Routes>
 
         {/* Globe stays at the bottom */}
@@ -36,6 +42,8 @@ function App() {
       {/* Scroll section stays outside the main screen */}
       {/* <ScrollSection /> */}
     </BrowserRouter>
+
+    
   )
 }
 
